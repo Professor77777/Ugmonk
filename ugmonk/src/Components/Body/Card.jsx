@@ -9,46 +9,17 @@ import {
   ItemSale,
 } from "./Card";
 
-const Card = ({ image, title }) => {
+const Card = ({ image, title, price }) => {
   return (
-    <CardWrapper>
-      <CardImageWrapper>
-        <CardImage src={image} alt={title} loading="lazy" />
-        <ItemTitle>
-          Analog Starter Kit <ItemSpan>(Walnut)</ItemSpan>
-        </ItemTitle>
-        <ItemPrice>
-          $103.00 <ItemSale>$89.00</ItemSale>
-        </ItemPrice>
-      </CardImageWrapper>
-      <CardImageWrapper>
-        <CardImage src={image} alt={title} loading="lazy" />
-        <ItemTitle>
-          Analog Starter Kit <ItemSpan>(Walnut)</ItemSpan>
-        </ItemTitle>
-        <ItemPrice>
-          $103.00 <ItemSale>$89.00</ItemSale>
-        </ItemPrice>
-      </CardImageWrapper>
-      <CardImageWrapper>
-        <CardImage src={image} alt={title} loading="lazy" />
-        <ItemTitle>
-          Analog Starter Kit <ItemSpan>(Walnut)</ItemSpan>
-        </ItemTitle>
-        <ItemPrice>
-          $103.00 <ItemSale>$89.00</ItemSale>
-        </ItemPrice>
-      </CardImageWrapper>
-      <CardImageWrapper>
-        <CardImage src={image} alt={title} loading="lazy" />
-        <ItemTitle>
-          Analog Starter Kit <ItemSpan>(Walnut)</ItemSpan>
-        </ItemTitle>
-        <ItemPrice>
-          $103.00 <ItemSale>$89.00</ItemSale>
-        </ItemPrice>
-      </CardImageWrapper>
-    </CardWrapper>
+    <CardImageWrapper>
+      <CardImage src={image} alt={title} loading="lazy" />
+      <ItemTitle>
+        {title} <ItemSpan>(Walnut)</ItemSpan>
+      </ItemTitle>
+      <ItemPrice>
+        ${price} <ItemSale>$89.00</ItemSale>
+      </ItemPrice>
+    </CardImageWrapper>
   );
 };
 export default Card;

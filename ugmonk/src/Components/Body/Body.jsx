@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { BodyTitle, ButtonBody, Container } from "./Body";
 import Card from "./Card.jsx";
+import { CardWrapper } from "./Card";
 import img from "../../Assets/Images/card1.png";
 import img2 from "../../Assets/Images/card2.png";
 import img3 from "../../Assets/Images/card3.png";
@@ -31,12 +32,16 @@ class Body extends Component {
             <ButtonBody>Objects</ButtonBody>
           </BodyTitle>
         </div>
-        <div>
-          <Card image={img} title="Image" />
-          <Card image={img2} title="Image" />
-          <Card image={img3} title="Image" />
+        <CardWrapper>
+          <Card image={img} title=" Analog Starter Kit" />
+          <Card image={img2} title="jkhdsskjdbckj" price="93722326" />
+          <Card image={img3} title="Image" price="93726" />
           <Card image={img4} title="Image" />
-        </div>
+          <Card image={img5} title="Image" />
+          <Card image={img6} title="Image" />
+          <Card image={img7} title="Image" />
+          <Card image={img8} title="Image" />
+        </CardWrapper>
       </Container>
     );
   }
